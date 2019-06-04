@@ -5,12 +5,13 @@ Usage
 
 First, install [Homebrew](https://brew.sh).
 Then
-₩₩₩
+```
 brew install pipenv
 pipenv run main.py
-₩₩₩
+```
 
-LICNESE
+License
 -------
-See <LICNESE.md>.
+papago-cli is licensed under the MIT License.
+[See LICENSE](LICENSE.md) for details.
 
