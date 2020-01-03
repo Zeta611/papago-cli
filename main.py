@@ -12,10 +12,12 @@ browser.get("https://papago.naver.com")
 
 timeout = 10
 try:
-    txt_source = (WebDriverWait(browser, timeout)
-                  .until(EC.presence_of_element_located((By.ID, "txtSource"))))
-    txt_target = (WebDriverWait(browser, timeout)
-                  .until(EC.presence_of_element_located((By.ID, "txtTarget"))))
+    txt_source = WebDriverWait(browser, timeout).until(
+        EC.presence_of_element_located((By.ID, "txtSource"))
+    )
+    txt_target = WebDriverWait(browser, timeout).until(
+        EC.presence_of_element_located((By.ID, "txtTarget"))
+    )
 
     to_translate = input("번역할 내용을 입력하세요: ")
     txt_source.send_keys(to_translate)
